@@ -187,8 +187,17 @@ function goFight() {
 
 function winFight() {
   update(locations[2]);
-  gold += 15;
-  goldText.innerText = gold;
+  if (fignting === 0) {
+    gold += 15;
+    goldText.innerText = gold;
+  }
+  if (fighting === 1) {
+    gold += 30;
+    goldText.innerText = gold;
+  }
+  if (fighting === 2) {
+    winGame();
+  }
 }
 
 function attack() {
