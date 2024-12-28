@@ -187,17 +187,7 @@ function goFight() {
 
 function winFight() {
   update(locations[2]);
-  if (fignting === 0) {
-    gold += 15;
-    goldText.innerText = gold;
-  }
-  if (fighting === 1) {
-    gold += 30;
-    goldText.innerText = gold;
-  }
-  if (fighting === 2) {
-    winGame();
-  }
+  defeatMonster();
 }
 
 function attack() {
@@ -243,7 +233,7 @@ function defeatMonster() {
   xp += monsters[fighting].level;
   goldText.innerText = gold;
   xpText.innerText = xp;
-  update(locations[4]);
+  update(locations[7]);
 }
 
 function lose() {
