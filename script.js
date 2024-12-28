@@ -257,7 +257,7 @@ function restart() {
 }
 
 function easterEgg() {
-  update(locations[7]);
+  update(locations[6]);
 }
 
 function pickTwo() {
